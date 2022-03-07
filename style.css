@@ -1,0 +1,12 @@
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.son {
+    border-radius: 15px;
+    background-color: rgb(6, 48, 87);
+    padding: 30px;
+    margin: 30px;
+}

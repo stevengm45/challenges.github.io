@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- muestra el sitio correctamente según el dispositivo del usuario -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Reto 1 | Bookmark landing page</title>
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Siéntase libre de eliminar estos estilos o personalizarlos en su propia hoja de estilo.👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+
+    <header>
+      <nav class="navbar">
+        <a href="#" class="nav-branding">
+          <img src="./images/logo-bookmark.svg" alt="" class="img_nav_bar">
+        </a>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="" class="nav-link">Features</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">Contact</a>
+          </li>
+          <li class="nav-item btn">
+            <input type="button" value="Login" class="hero_btn_link">
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
+
+    <!-- <section class="top-nav">
+      <div>
+        Logo Here
+      </div>
+      <input id="menu-toggle" type="checkbox" />
+      <label class='menu-button-container' for="menu-toggle">
+      <div class='menu-button'></div>
+    </label>
+      <ul class="menu">
+        <li>Features</li>
+        <li>Pricing</li>
+        <li>Contact</li>
+        <li>Four</li>
+        <li><input type="button" value="Login" class="hero_btn_link"></li>
+      </ul>
+    </section> -->
+  
+    <!-- <header class="header">
+      <a href="" class="logo">CSS Nav</a>
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+      <ul class="menu">
+        <li><a href="#work">Our Work</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#careers">Careers</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </header> -->
+
+      <!-- <nav class="hero_nav">
+          <figure class="hero_logo">
+            <img src="./images/logo-bookmark.svg" alt="" class="hero_bookmark" />
+          </figure>
+          <input id="menu-toggle" type="checkbox" />
+          <label class='menu-button-container' for="menu-toggle">
+          <div class='menu-button'></div>
+          </label>
+        <div class="hero_nav_links">
+          
+          <a href="#" class="hero_link">Features</a>
+          <a href="#" class="hero_link">Pricing</a>
+          <a href="#" class="hero_link">Contact</a>
+          <input type="button" value="Login" class="hero_btn_link">
+        </div>
+      </nav> -->
+
+
+
+    <main class="main">
+
+      <section class="hero_main">
+        <div class="hero_texts">
+          <h1 class="hero_title">A Simple Bookmark Manager</h1>
+          <p class="hero_paragraph">
+            A clean and simple interface to organize your favourite websites.
+            Open a new browser tab and see your sites load instantly. Try it for
+            free.
+          </p>
+          <a href="#" class="cta"> Get it on Chrome </a>
+          <a href="#" class="cta cta2"> Get it on Firefox </a>
+        </div>
+        <div class="hero_picture">
+          <img src="./images/illustration-hero.svg" alt="" class="hero_img" />
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section_texts">
+          <h2 class="subtitle">Features</h2>
+          <p class="section_paragraph">
+            Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.
+          </p>
+        </div>
+      </section>
+
+      <section class="section_tab">
+        <div class="tab">
+          <button class="tablinks" onclick="openCity(event, 'simple_bookmarking')">Simple Bookmarking</button>
+          <button class="tablinks" onclick="openCity(event, 'intelligent_search')">Intelligent search</button>
+          <button class="tablinks" onclick="openCity(event, 'share_your_bookmarks')">Share your bookmarks</button>
+        </div>
+
+        <!-- Tab content -->
+        <div id="simple_bookmarking" class="tabcontent">
+          <div class="container_tab">
+            <div class="img_tab bookmark">
+              <img src="./images/illustration-features-tab-1.svg" alt="" class="img_icon_tab" />
+            </div>
+            <div class="content_info_tab">
+              <h3>Bookmark in one click</h3>
+              <p class="text_tab">
+                Organize your bookmarks however you like. Our simple drag-and-drop
+                interface gives you complete control over how you manage your
+                favourite sites.
+              </p>
+              <input class="btn_info_tab" type="button" value="More Info" />
+            </div>
+          </div>
+        </div>
+
+        <div id="intelligent_search" class="tabcontent">
+          <div class="container_tab">
+            <div class="img_tab">
+              <img src="./images/illustration-features-tab-2.svg" alt="" class="img_icon_tab" />
+            </div>
+            <div class="content_info_tab">
+              <h3>Intelligent search</h3>
+              <p class="text_tab">
+                Our powerful search feature will help you find saved sites in no time at all. 
+                No need to trawl through all of your bookmarks.
+              </p>
+              <input class="btn_info_tab" type="button" value="More Info" />
+            </div>
+          </div>
+        </div>
+        
+        <div id="share_your_bookmarks" class="tabcontent">
+          <div class="container_tab">
+            <div class="img_tab">
+              <img src="./images/illustration-features-tab-3.svg" alt="" class="img_icon_tab" />
+            </div>
+            <div class="content_info_tab">
+              <h3>Share your bookmarks</h3>
+              <p class="text_tab">
+                Easily share your bookmarks and collections with others. Create a shareable 
+                link that you can send at the click of a button.
+              </p>
+              <input class="btn_info_tab" type="button" value="More Info" />
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="section">
+        <div class="section_texts">
+          <h2 class="subtitle">Download the extension</h2>
+          <p class="section_paragraph">
+            We’ve got more browsers in the pipeline. Please do let us know if
+            you’ve got a favourite you’d like us to prioritize.
+          </p>
+        </div>
+        <div class="section_container_options">
+          <div class="section_options chrome">
+            <img
+              src="./images/logo-chrome.svg"
+              alt=""
+              class="section_img_options"
+            />
+            <h3 class="navegador">Add to Chrome</h3>
+            <p class="section_paragraph_option">Minimum version 62</p>
+            <img src="./images/bg-dots.svg" alt="" class="img_points" />
+            <br />
+            <button class="btn_options">Add & Install Extension</button>
+          </div>
+
+          <div class="section_options firefox">
+            <img
+              src="./images/logo-firefox.svg"
+              alt=""
+              class="section_img_options"
+            />
+            <h3 class="navegador">Add to Firefox</h3>
+            <p class="section_paragraph_option">Minimum version 55</p>
+            <img src="./images/bg-dots.svg" alt="" class="img_points" />
+            <br />
+            <button class="btn_options">Add & Install Extension</button>
+          </div>
+
+          <div class="section_options opera">
+            <img
+              src="./images/logo-opera.svg"
+              alt=""
+              class="section_img_options"
+            />
+            <h3 class="navegador">Add to Opera</h3>
+            <p class="section_paragraph_option">Minimum version 46</p>
+            <img src="./images/bg-dots.svg" alt="" class="img_points" />
+            <br />
+            <button class="btn_options">Add & Install Extension</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section questions_app">
+        <div class="section_texts">
+          <h2 class="subtitle">Frequently Asked Questions</h2>
+          <p class="section_paragraph">
+            Here are some of our FAQs. If you have any other questions you’d
+            like answered please feel free to email us.
+          </p>
+        </div>
+        <div class="section_container_questions">
+          <button class="accordion first">What is Bookmark?
+            <img src="./images/icon-arrow.svg" alt="" class="icon_arrow">
+          </button>
+          
+          <div class="panel">
+            <p class="questions">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+              tincidunt justo eget ultricies fringilla. Phasellus blandit ipsum
+              quis quam ornare mattis.
+            </p>
+          </div>
+          
+
+          <button class="accordion">How can I request a new browser?
+            <img src="./images/icon-arrow.svg" alt="" class="icon_arrow">
+          </button>
+          <div class="panel">
+            <p>
+              Vivamus luctus eros aliquet convallis ultricies. Mauris augue
+              massa, ultricies non ligula. Suspendisse imperdiet. Vivamus luctus
+              eros aliquet convallis ultricies. Mauris augue massa, ultricies
+              non ligula. Suspendisse imperdie tVivamus luctus eros aliquet
+              convallis ultricies. Mauris augue massa, ultricies non ligula.
+              Suspendisse imperdiet.
+            </p>
+          </div>
+
+          <button class="accordion">Is there a mobile app?
+            <img src="./images/icon-arrow.svg" alt="" class="icon_arrow">
+          </button>
+          <div class="panel">
+            <p>
+              Sed consectetur quam id neque fermentum accumsan. Praesent luctus
+              vestibulum dolor, ut condimentum urna vulputate eget. Cras in
+              ligula quis est pharetra mattis sit amet pharetra purus. Sed
+              sollicitudin ex et ultricies bibendum.
+            </p>
+          </div>
+
+          <button class="accordion">
+            <div class="text_arrow">
+              What about other Chromium browsers?
+            </div>
+            <div class="icon_arrow">
+              <img src="./images/icon-arrow.svg" alt="" class="icon_arrow">
+            </div>
+          </button>
+          <div class="panel">
+            <p>
+              Integer condimentum ipsum id imperdiet finibus. Vivamus in
+              placerat mi, at euismod dui. Aliquam vitae neque eget nisl gravida
+              pellentesque non ut velit.
+            </p>
+          </div>
+        </div>
+
+        <button class="btn_info">More Info</button>
+      </section>
+
+    </main>
+
+    <section class="contact">
+      <div class="contact_newsletter">
+        <h2 class="contact_title">35,000+ already joined</h2>
+        <h2 class="contact_paragraph">
+          Stay up-to-date with what we’re doing
+        </h2>
+        <form class="contact_form">
+          <input type="email" class="contact_input" name="" id="" placeholder="Enter your email address"/>
+          <input type="submit" class="contact_cta" value="Contact Us" />
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer_container">
+        <section class="footer_content">
+          <div class="footer_nav_links">
+            <img src="./images/logo-bookmark-white.svg" class="footer_logo" alt=""/>
+            <a href="#" class="footer_link">Features</a>
+            <a href="#" class="footer_link">Pricing</a>
+            <a href="#" class="footer_link">Contact</a>
+          </div>
+
+          <div class="footer_social">
+            <a href="#" class="footer_link">
+              <img src="./images/icon-facebook.svg" class="footer_icon" alt="" />
+            </a>
+            <a href="#" class="footer_link">
+              <img src="./images/icon-twitter.svg" class="footer_icon" alt="" />
+            </a>
+          </div>
+        </section>
+        
+        <div class="author">
+          Coded by <a href="#" class="link_author">Stiven Gonzalez</a>.
+        </div>
+      </div>
+
+    </footer>
+
+    <script src="./scripts/accordion.js"></script>
+    <script src="./scripts/tab.js"></script>
+    <script src="./scripts/menu.js"></script>
+  </body>
+</html>
